@@ -59,4 +59,9 @@ ffmpeg -i test.mp4 -ac 1 -ar 16000 test.wav
 ffmpeg -i test.mp4 -i test.srt -c copy -c:s mov_text test_with_sub.mp4
 ```
 
+ 硬字幕（燒錄進畫面）：
+```bash
+ffmpeg -i input.mp4 -vf subtitles=subtitles_en.srt output_burned.mp4
+```
+
 完成後 `test_with_sub.mp4` 影片就有內嵌可開關的中文字幕。
