@@ -10,7 +10,7 @@ pip install -U yt-dlp
 ````
 
 ```bash
-./downloadYoutube.sh
+./downloadBest.sh
 ```
 
 ---
